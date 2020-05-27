@@ -1,7 +1,7 @@
 <AppUpdater>
     <update>
         <latestVersion>1.0.1</latestVersion>
-        <!-- Don't forget to update version in build.gradle(:app) and strings.xml -->
+        <!-- Don't forget to update the version in build.gradle(:app) and strings.xml -->
 
         <url>https://github.com/LandsKapten/ProductHelper-Dev/releases/download/Latest/MPL.Product.Helper.Dev.apk</url>
     </update>

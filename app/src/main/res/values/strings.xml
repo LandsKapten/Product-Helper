@@ -3,4 +3,6 @@
     <string name="prodNeededString"><b><u>Productivity Needed</u></b></string>
     <string name="tvLoProdString"><b><u>For lower productivity workers</u></b></string>
     <string name="versionString">Dev Build 1.0.1</string>
+    <!-- Don't forget to update the version in build.gradle(:app) and update.xml -->
 </resources>
+
