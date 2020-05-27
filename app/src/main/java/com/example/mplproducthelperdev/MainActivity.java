@@ -1,4 +1,4 @@
-package com.example.mplproducthelperv20;
+package com.example.mplproducthelperdev;
 
 import android.app.ProgressDialog;
 import android.content.Intent;

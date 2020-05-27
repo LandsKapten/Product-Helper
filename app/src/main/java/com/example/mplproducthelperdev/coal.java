@@ -1,4 +1,4 @@
-package com.example.mplproducthelperv20;
+package com.example.mplproducthelperdev;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -14,10 +14,6 @@ import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.github.javiersantos.appupdater.AppUpdater;
-import com.github.javiersantos.appupdater.enums.Display;
-import com.github.javiersantos.appupdater.enums.UpdateFrom;
 
 import java.text.DecimalFormat;
 
