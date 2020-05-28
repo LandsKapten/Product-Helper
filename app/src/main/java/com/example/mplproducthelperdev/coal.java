@@ -33,12 +33,12 @@ public class coal extends AppCompatActivity implements AdapterView.OnItemSelecte
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_coal);
 
-        CheckBox checkbox1 = (CheckBox) findViewById(R.id.weeklyBoost);
+        CheckBox checkbox1 = findViewById(R.id.weeklyBoost);
         checkbox1.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
 
             @Override
             public void onCheckedChanged(CompoundButton buttonView,boolean isChecked) {
-                if (buttonView.isChecked()==true) {
+                if (buttonView.isChecked()) {
                     checkValue = 1.2;
                 } else
                 {
@@ -50,17 +50,17 @@ public class coal extends AppCompatActivity implements AdapterView.OnItemSelecte
 
 
         checkbox1.setChecked(false);
-        TextView message = (TextView)findViewById(R.id.tvProdPerc);
-        Button calculateButton = (Button) findViewById(R.id.calcBtn);
-        EditText unitsText = (EditText) findViewById(R.id.etUnitsInRegion);
+        TextView message = findViewById(R.id.tvProdPerc);
+        Button calculateButton = findViewById(R.id.calcBtn);
+        EditText unitsText = findViewById(R.id.etUnitsInRegion);
         unitsText.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
-                Button calculateButton = (Button) findViewById(R.id.calcBtn);
-                EditText unitsText = (EditText) findViewById(R.id.etUnitsInRegion);
+                Button calculateButton = findViewById(R.id.calcBtn);
+                EditText unitsText = findViewById(R.id.etUnitsInRegion);
 
                 double unitsString;
                 try {
@@ -83,7 +83,7 @@ public class coal extends AppCompatActivity implements AdapterView.OnItemSelecte
             @Override
             public void afterTextChanged(Editable s){}
         });
-        Spinner productList = (Spinner) findViewById(R.id.spinProducts);
+        Spinner productList = findViewById(R.id.spinProducts);
         productList.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -305,9 +305,9 @@ public class coal extends AppCompatActivity implements AdapterView.OnItemSelecte
         calculateButton.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
 
-                EditText unitsText = (EditText) findViewById(R.id.etUnitsInRegion);
-                TextView message = (TextView)findViewById(R.id.tvProdPerc);
-                Button calculateButton = (Button) findViewById(R.id.calcBtn);
+                EditText unitsText = findViewById(R.id.etUnitsInRegion);
+                TextView message = findViewById(R.id.tvProdPerc);
+                Button calculateButton = findViewById(R.id.calcBtn);
                 int timesToWork = 1;
                 double companyBonus = 1.8;
                 double regionalUnits;
@@ -334,9 +334,9 @@ public class coal extends AppCompatActivity implements AdapterView.OnItemSelecte
 
                     }
                 }
-                TextView tvProd1Var = (TextView) findViewById(R.id.tvProd1);
-                TextView tvProd2Var = (TextView) findViewById(R.id.tvProd2);
-                TextView tvProd3Var = (TextView) findViewById(R.id.tvProd3);
+                TextView tvProd1Var = findViewById(R.id.tvProd1);
+                TextView tvProd2Var = findViewById(R.id.tvProd2);
+                TextView tvProd3Var = findViewById(R.id.tvProd3);
 
                 int timesToWork2 = timesToWork + 1;
                 int timesToWork3 = timesToWork + 2;
@@ -354,7 +354,7 @@ public class coal extends AppCompatActivity implements AdapterView.OnItemSelecte
                 tvProd3Var.setText(Html.fromHtml(timesString3));
 
 
-                TextView tvProdTimesToWork = (TextView) findViewById(R.id.tvTimesToWork);
+                TextView tvProdTimesToWork = findViewById(R.id.tvTimesToWork);
                 String timesString4 = "You need to work <b>" + timesToWork + "</b>" + " time at " + "<b>" + df.format(neededProductivity) + "%</b>" + " productivity";
                 tvProdTimesToWork.setText(Html.fromHtml(timesString4));
 

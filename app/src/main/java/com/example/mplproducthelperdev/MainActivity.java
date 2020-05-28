@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.github.javiersantos.appupdater.AppUpdater;
 import com.github.javiersantos.appupdater.enums.Display;
 import com.github.javiersantos.appupdater.enums.UpdateFrom;
+
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -22,8 +23,6 @@ import com.google.firebase.auth.FirebaseUser;
 
 
 public class MainActivity extends AppCompatActivity {
-
-
     private EditText Name;
     private EditText Password;
     private Button Login;
@@ -51,8 +50,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        TextView tvVersion = (TextView) findViewById(R.id.tvAppVersion);
+        TextView tvVersion = findViewById(R.id.tvAppVersion);
         tvVersion.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,13 +58,10 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        Name = (EditText) findViewById(R.id.etName);
-        Password = (EditText) findViewById(R.id.etPassword);
-        Login = (Button) findViewById(R.id.btnLogin);
+        Name = findViewById(R.id.etName);
+        Password = findViewById(R.id.etPassword);
+        Login = findViewById(R.id.btnLogin);
         progressDialog = new ProgressDialog(this);
-
-
 
         firebaseAuth = FirebaseAuth.getInstance();
         FirebaseUser user = firebaseAuth.getCurrentUser();
@@ -81,6 +76,7 @@ public class MainActivity extends AppCompatActivity {
                 validate(Name.getText().toString(), Password.getText().toString());
             }
         });
+
     }
 
     private void validate(String userName, String userPassword){
@@ -102,5 +98,6 @@ public class MainActivity extends AppCompatActivity {
     });
 
     }
+
 
 }
