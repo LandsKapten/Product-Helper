@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "24403902484",
+    "firebase_url": "https://mpl---dev.firebaseio.com",
+    "project_id": "mpl---dev",
+    "storage_bucket": "mpl---dev.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:24403902484:android:de68d87506e08d88326701",
+        "android_client_info": {
+          "package_name": "com.example.mplproducthelperdev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "24403902484-03fjspedhgdfl33mkffh7m5ncq2s5ur7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBC2VjiJHLhuJTwOJ4u5W1V6HV3LHROR0U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "24403902484-03fjspedhgdfl33mkffh7m5ncq2s5ur7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
